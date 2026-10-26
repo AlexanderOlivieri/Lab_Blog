@@ -1,0 +1,121 @@
+/* Limpieza básica para quitar márgenes por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff9f0; /* Fondo tono crema claro */
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #c0392b; /* Rojo tradicional */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f1c40f; /* Cambia a amarillo al pasar el mouse */
+}
+
+/* Banner de portada */
+.banner {
+    background-color: #e67e22; /* Naranja cálido */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.banner h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+/* Contenedor principal */
+.contenedor {
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+/* Sección de la historia */
+.historia {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 6px solid #c0392b;
+    margin-bottom: 30px;
+}
+
+.historia h2 {
+    color: #c0392b;
+    margin-bottom: 15px;
+}
+
+.historia p {
+    margin-bottom: 10px;
+}
+
+/* Sección de pilares/valores */
+.valores {
+    text-align: center;
+}
+
+.valores h2 {
+    color: #c0392b;
+    margin-bottom: 20px;
+}
+
+.tarjeta-valor {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-valor h3 {
+    color: #e67e22;
+    margin-bottom: 8px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px 0;
+}
