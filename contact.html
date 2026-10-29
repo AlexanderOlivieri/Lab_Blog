@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros - Taquería Devcoders</title>
+  <!-- Enlazamos nuestra hoja de estilos CSS externa -->
+  <link rel="stylesheet" href="contact.css">
+  <!--Instalando bootstrap mediante CDN-->
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+  <style>
+    .sidebar,
+    .content,
+    .footer,
+    .nav-bar {
+      border: 1px solid#999;
+    }
+
+    .main-row {
+      min-height: 500px;
+    }
+
+    .sidebar,
+    .content,
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body style="background-color: #f6e58d;">
+  <div class="container mt-5">
+    <!-- Encabezado con el menú de navegación -->
+    <header class="text-dark text-center p-4" style="background-color: #badc58;">
+
+      <h1>🌮 Taquería Devcoders 🌮</h1>
+
+      <!-- Menú de navegación -->
+      <nav>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Menú</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Nosotros</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Banner principal de bienvenida -->
+
+    <section class="text-dark text-center p-5" style="background-color:#eb4d4b;">
+      <h2>Contáctanos</h2>
+      <p>Los mejores tacos al pastor de la ciudad desde 1998.</p>
+    </section>
+
+    <main class="container mt-5">
+      <section id="contacto" class="rounded text-dark text-center p-4 border border-light"
+        style="background-color: #badc58;">
+        <div class="row g-3">
+          <div class="col-4">
+            <div class="card border-danger h-100" style="background-color: #badc58;">
+              <div class="card-body">
+                <h3 class="card-title text-danger text-center "><strong>Reserva tu mesa</strong></h3>
+                <input type="text" id="nombre" class="rounded text-dark text-center p-4"
+                  style="background-color: #ffbe76;" placeholder="Tu nombre">
+                <input type="text" id="nombre" class="rounded text-dark text-center p-4"
+                  style="background-color: #ffbe76;" placeholder="¿Qué día nos visitas?">
+                <input type="text" id="nombre" class="rounded text-dark text-center p-4"
+                  style="background-color: #ffbe76;" placeholder="¿A qué hora te vemos?">
+                <button id="enviar" style="background-color:#f0932b">Enviar</button>
+                <p id="mensaje">Ofrecemos banquetes, taquizas y servicios para tu evento, escríbenos y podremos
+                  ofrecerte
+                  alguna
+                  rica opción para acompañarte</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card border-danger h-100" style="background-color: #badc58;">
+              <div class="card-body">
+                <h3><strong>🌮TAQUERÍA DEVCODERS🌮</strong></h3>
+                <p>Tacos sabrosos, hechos con amor</p>
+                <img src="taco_foto.jpg" alt="Nuestro famoso taco de pastor" class="card-img rounded-circle"
+                  width="150px">
+                <br>
+                <h3><strong>🕰️Horario</strong></h3>
+                <p>🥑Domingo a Jueves 1 pm a 8 pm</p>
+                <p>🥑Viernes y Sábado 1 pm a 3 am</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card border-danger h-100" style="background-color: #badc58;">
+              <div class="card-body">
+                <h3><strong>Encuéntranos</strong></h3>
+                <p>📞555 123 897</p>
+                <p>📧hola@quierotaquitos.com</p>
+                <p><strong>Dirección:</strong>Avenida Hambrienta número 123, CDMX</p>
+                <img src="mapa_taco.jpg" alt="Vísitanos en nuestra sucursal principal" class="card-img rounded-circle"
+                  width="150px">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card border-danger h-100" style="background-color: #badc58;">
+              <div class="card-body">
+                <form>
+                  <div class="form-group">
+                    <button type="button" class="btn btn-warning" style="background-color: #fa9743;">Correo
+                      electrónico</button>
+                    <input type="email" class="form-control text-center" style="background-color: #ffbe76";"
+                      id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Agregue su correo">
+                    <small id="emailHelp" class="form-text text-muted">No compartimos tu info con nadie
+                      más</small>
+                  </div>
+                  <div class="form-group">
+                    <button type="button" class="btn btn-warning" style="background-color: #fa9743;">Número
+                      celular</button>
+                    <input type="password" class="form-control text-center" style="background-color: #ffbe76;" id="exampleInputPassword1"
+                      placeholder="Te contactaremos por WhatsApp">
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Quiero recibir promociones e info de
+                      eventos</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary text-center" style="background-color:#f0932b;">Enviar</button>
+                  <div class="alert alert-warning alert-dismissible fade show"  style="background-color: #f6e58d;" role="alert">
+                    <strong>¡Mensaje enviado, ya eres un TacoLover!</strong> No olvides revisar tu carpeta spam
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" style="background-color:#eb4d4b;">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+      </section>
+  </div>
+
+
+  <!-- Pie de página -->
+  <div class="container mt-5">
+    <footer class="text-dark text-center p-4" style="background-color: #eb4d4b;">
+      <p><strong>&copy; 2026 Taquería Devcoders. Todos los derechos reservados.</strong></p>
+      <ul>
+        <li><strong><a href="#contacto">Contacto</a></strong></li>
+        <li><strong><a href="#aviso-legal">Aviso legal</a></strong></li>
+      </ul>
+    </footer>
+  </div>
+
+  <!--Bootstrap JS-->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+    crossorigin="anonymous"></script>
+
+</body>
+</main>
